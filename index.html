@@ -122,11 +122,11 @@ console.log();
 <!-- end wrap -->
 
 <script type="text/javascript">
-var documentHoogte = $(document).height();
+// var documentHoogte = $(document).height();
 var schermHoogte = $(window).height();
+//
+console.log('schermHoogte = ', schermHoogte);
 
-console.log('schermhoogte = ', schermHoogte);
-console.log('schermhoogte = ', documentHoogte);
 
 // hoogte van het complete document
 var offsetHeight = document.getElementById('content').offsetHeight;
@@ -135,7 +135,7 @@ var popUpDis = 300;
 
 // print regel document hoogte
 console.log('height of ducument = ', offsetHeight);
-console.log('height of ducument devided by 5 = ', documentHoogte/5);
+console.log('height of ducument devided by 5 = ', offsetHeight/5);
 console.log('popup punt = ', popUp);
 console.log('height of ducument devided by 5 * 2 = ', documentHoogte/5*2);
 

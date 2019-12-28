@@ -118,8 +118,9 @@ h1 {
   text-indent: 30px;
 }
 
-.tussenkop {
-  font-size: 13px;
+.naam {
+  font-size: 15px;
+  text-indent: 30px;
 }
 
 .quote {

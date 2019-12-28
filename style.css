@@ -16,21 +16,22 @@ body {
   width: 96%;
   max-width: 400px;
   left: 0;
-  background-color: #f2f2f2;
+  /* background-color: #f2f2f2; */
+  background-color: #cccccc;
   transition: bottom .5s linear;
   color: black;
   font-size: 2em;
   text-align: center;
   border-radius: 4px;
-  box-shadow: 5px 5px 18px #888888;
+  box-shadow: 5px 5px 18px black;
   font-size: 17px;
   margin-left: 2%;
   overflow-y: auto;
 }
 
 #popup1{
-  bottom: -700px;
-  height: auto;
+  bottom: -600px;
+  height: 600px;
 }
 
 #popup1.show{
@@ -39,7 +40,7 @@ body {
 
 #popup2{
   bottom: -600px;
-  height: auto;
+  height: 600px;
 }
 
 #popup2.show{
@@ -48,7 +49,7 @@ body {
 
 #popup3{
   bottom: -600px;
-  height: auto;
+  height: 600px;
   background-image: url("images/zweden1.jpg");
 }
 
@@ -58,7 +59,7 @@ body {
 
 #popup4{
   bottom: -600px;
-  height: auto;
+  height: 600px;
 }
 
 #popup4.show{

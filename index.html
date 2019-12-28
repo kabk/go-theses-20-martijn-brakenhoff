@@ -39,6 +39,7 @@ console.log();
 </script>
 
 <div id="popup1" class="popupstyle">
+  <p class="diary">
   13-05-2019, day 7
   <br>
   <br>
@@ -49,9 +50,11 @@ console.log();
   <br>
   <br>
   …The next morning I heard the same sound again. This time coming from a little further away. It was light this time and this time I decided to inspect. It turned out it was a small deer, not much bigger than a large size dog. Feeling a bit fooled I continued my journey…
+  </p>
 </div>
 
 <div id="popup2" class="popupstyle">
+  <p class="diary">
   24-05-2019, day 18
   <br>
   <br>
@@ -59,10 +62,11 @@ console.log();
   <br>
   <br>
   …I forgot how desperate you can feel when you are in need of a toilet but there are none around. I’d been holding it up to the point that my stomach started cramping, when finally a small patch of trees showed up. It could have been the only opportunity in the next few hours. I felt super vulnerable, If anyone passed by there is not much I could have done, they would had to watch me finish. After I was finished I felt the most intense feeling of relief I have ever felt...
-
+  </p>
 </div>
 
 <div id="popup3" class="popupstyle">
+  <p class="diary">
   31-05-2019, day 25
   <br>
   <br>
@@ -70,15 +74,27 @@ console.log();
   <br>
   <br>
   …It was a beautiful place with a view over the water, but it turned out it was also a place for homosexuals to meet and “have fun”. After I left the place in a hurry and overcoming the shock of my very unexpected view the price of the replacement camping didn’t seem so bad after all…
-
+  </p>
 </div>
 
 <div id="popup4" class="popupstyle">
+  <p class="diary">
   09-06-2019, day 34
   <br>
   <br>
   ...I am in Germany, and very close to home. I ate all my food the evening before, so my first goal of the day was to do groceries. It turned out that all supermarkets were closed. I forgot that it is pinksteren today and I can’t get food anywhere. The only shops that are open seem to be gas stations where they only sell candy and sodas. Despite this setback I managed to cover my longest distances so far. 180 km on a diet almost exclusively containing doritos and snickers...
+  </p>
+</div>
 
+<div id="popup5" class="popupstyle">
+  <video width="100%" height="auto" controls>
+    <source src="images/vid.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+<div id="popup6" class="popupstyle">
+  <img src="images/chain.jpg" alt="klajsdl;fkjasd" class="popimage">
 </div>
 
 <div id="wrap">
@@ -88,7 +104,7 @@ console.log();
   <h1>Insights on Outdoor Experiences</h1>
 
 <!-- Hoofdstuk1 -->
-  <p class="naam"> written by Martijn Brakenhoff</p>
+  <p class="naam"> by Martijn Brakenhoff</p>
 
   <p class="text">  I’ve always enjoined cycling, and every now and then I would fantasise with a friend about making an epic bicycle trip to some place beautiful and remote. Like most of these kinds of fantasies they never happened, due lack of time, money, equipment etc. After learning the disappointing news that I had to redo the final year of my graphic design study I suddenly had a lot of time on my hands. It felt like I spend too much time in school the past three years and motivation was running low, I drastically needed a reboot. I figured a good break and some time away from the school environment would do me good. Now, with half a year of nothing in front of me there were no more excuses and I decided to make it happen. I took a job to save up for some equipment and eventually scavenged all the gear together that I was going to need for my journey. The destination was from the beginning very clear: Sweden. I have never been to Sweden before, but in my mind it is a land of wilderness, filled with endless pine forests, enormous lakes, and pristine nature. I roughly came up with a route that I wanted to cycle. A line that led me from Germany via Denmark to Sweden with as final destination Stockholm, and from the Swedish capital back home.
   </p>
@@ -224,12 +240,12 @@ console.log('schermHoogte = ', schermHoogte);
 
 // hoogte van het complete document
 var offsetHeight = document.getElementById('content').offsetHeight;
-var popUp = offsetHeight/5;
+var popUp = offsetHeight/6;
 var popUpDis = 300;
 
 // print regel document hoogte
 console.log('height of ducument = ', offsetHeight);
-console.log('height of ducument devided by 5 = ', offsetHeight/5);
+console.log('height of ducument devided by 5 = ', offsetHeight/6);
 console.log('popup punt = ', popUp);
 console.log('height of ducument devided by 5 * 2 = ', documentHoogte/5*2);
 
@@ -238,17 +254,24 @@ $(window).scroll(function() {
   if ($(window).scrollTop() > popUp && $(window).scrollTop() < popUp+popUpDis) {
       $('#popup1').addClass('show')
   } else if ($(window).scrollTop() > popUp*2 && $(window).scrollTop() < popUp*2+popUpDis) {
-      $('#popup2').addClass('show')
+      $('#popup5').addClass('show')
   } else if ($(window).scrollTop() > popUp*3 && $(window).scrollTop() < popUp*3+popUpDis) {
-      $('#popup3').addClass('show')
+      $('#popup2').addClass('show')
   } else if ($(window).scrollTop() > popUp*4 && $(window).scrollTop() < popUp*4+popUpDis) {
+      $('#popup3').addClass('show')
+  } else if ($(window).scrollTop() > popUp*5 && $(window).scrollTop() < popUp*5+popUpDis) {
       $('#popup4').addClass('show')
+  } else if ($(window).scrollTop() > popUp*6 && $(window).scrollTop() < popUp*6+popUpDis) {
+      $('#popup6').addClass('show')
   }
+
   else {
   $('#popup1').removeClass('show')
   $('#popup2').removeClass('show')
   $('#popup3').removeClass('show')
   $('#popup4').removeClass('show')
+  $('#popup5').removeClass('show')
+  $('#popup6').removeClass('show')
   }
 });
 

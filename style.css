@@ -20,7 +20,6 @@ body {
   background-color: #cccccc;
   transition: bottom .5s linear;
   color: black;
-  font-size: 2em;
   text-align: center;
   border-radius: 4px;
   box-shadow: 5px 5px 18px #888888;
@@ -55,7 +54,6 @@ body {
   bottom: -550px;
   max-height: 500px;
   height: auto;
-  background-image: url("images/zweden1.jpg");
 }
 
 #popup3.show{
@@ -69,6 +67,26 @@ body {
 }
 
 #popup4.show{
+  bottom: 15px;
+}
+
+#popup5{
+  bottom: -750px;
+  height: auto;
+}
+
+#popup5.show{
+  bottom: 15px;
+}
+
+#popup6{
+  bottom: -550px;
+  max-height: 500px;
+  height: auto;
+  /* background-image: url("images/chain.jpg"); */
+}
+
+#popup6.show{
   bottom: 15px;
 }
 
@@ -102,6 +120,11 @@ body {
   text-align: center;
 }
 
+.popimage {
+  width: 100%;
+  height: 100%;
+}
+
 img {
   height: auto;
   width: 85%;
@@ -114,8 +137,14 @@ h1 {
 
 
 .text {
-  font-size: 19px;
+  font-size: 17px;
   text-indent: 30px;
+}
+
+.diary {
+  font-size: 17px;
+  text-indent: 30px;
+  padding: 10px;
 }
 
 .naam {

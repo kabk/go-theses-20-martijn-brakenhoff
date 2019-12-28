@@ -15,7 +15,6 @@ body {
   z-index:100;
   width: 96%;
   max-width: 400px;
-  bottom: -600px;
   left: 0;
   background-color: #f2f2f2;
   transition: bottom .5s linear;
@@ -30,7 +29,7 @@ body {
 }
 
 #popup1{
-  bottom: -600px;
+  bottom: -700px;
   height: auto;
 }
 

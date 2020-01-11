@@ -5,6 +5,7 @@ body {
   padding: 0;
   /* background-color: #f2f2f2; */
   font-family: 'Roboto', sans-serif;
+  overflow-x: hidden
 
 }
 
@@ -13,81 +14,88 @@ body {
 .popupstyle {
   position: fixed;
   z-index:100;
-  width: 94%;
+  width: 90%;
   max-width: 400px;
   left: 0;
   /* background-color: #f2f2f2; */
   background-color: #cccccc;
   transition: bottom .5s linear;
   color: black;
-  text-align: center;
   border-radius: 4px;
   box-shadow: 5px 5px 18px #888888;
   font-size: 17px;
   float: right;
-  margin-left: 3%;
-  margin-right: 3%;
+  margin-left: 5%;
+  margin-right: 5%;
   overflow-y: auto;
+
 }
 
 #popup1{
   bottom: -550px;
   max-height: 500px;
   height: auto;
+  background-color: #c3b3a2;
 }
 
 #popup1.show{
-  bottom: 15px;
+  bottom: 50px;
 }
 
 #popup2{
   bottom: -550px;
   max-height: 500px;
   height: auto;
+  background-color: #d3d2ff;
 }
 
 #popup2.show{
-  bottom: 15px;
+  bottom: 50px;
 }
 
 #popup3{
   bottom: -550px;
   max-height: 500px;
   height: auto;
+  background-color: #d3ddb3;
 }
 
 #popup3.show{
-  bottom: 15px;
+  bottom: 50px;
 }
 
 #popup4{
   bottom: -550px;
   max-height: 500px;
   height: auto;
+  background-color: #f8f8d0;
 }
 
 #popup4.show{
-  bottom: 15px;
+  bottom: 50px;
 }
 
 #popup5{
   bottom: -750px;
   height: auto;
+  background-color: #c8e4cd;
 }
 
 #popup5.show{
-  bottom: 15px;
+  bottom: 50px;
 }
 
 #popup6{
   bottom: -550px;
   max-height: 500px;
   height: auto;
-  /* background-image: url("images/chain.jpg"); */
+  color: white;
+  /* background-image: url("images/chain.jpg");
+  background-size: 100%; */
 }
 
 #popup6.show{
-  bottom: 15px;
+  bottom: 50px;
 }
 
 #wrap {
@@ -95,21 +103,27 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
+  overflow-x: hidden
 }
 
 #content {
   height: 100%;
   width: auto;
   margin: 18px;
-  padding: ;
+  padding-bottom: 60px ;
+  overflow-x: hidden
 }
 
-#overlap {
-  height: 100%;
+#top {
+  height: 50px;
   width: 100%;
   position: fixed;
-  margin-top: 320px;
-
+  /* background-color: pink; */
+  z-index:95;
+  bottom: 0;
+  background-color: white;
+  box-shadow: 6px -20px 20px white;
+  overflow-x: hidden
 }
 
 
@@ -118,6 +132,8 @@ body {
   height: auto;
   width: 100%;
   text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .popimage {
@@ -135,16 +151,21 @@ h1 {
   padding-left: 30px;
 }
 
+p{
+
+}
 
 .text {
   font-size: 17px;
   text-indent: 30px;
+  padding: 0;
+  margin: 0;
+
 }
 
 .diary {
-  font-size: 17px;
-  text-indent: 30px;
-  padding: 10px;
+  font-size: 15px;
+  padding: 20px;
 }
 
 .naam {
@@ -162,4 +183,33 @@ h1 {
   font-size: 15px;
   text-align: center;
   color: grey;
+}
+
+.gototop{
+  font-size: 15px;
+  text-align: right;
+  margin-right: 5%;
+  color: red;
+}
+
+.endnotes{
+  font-size: 15px;
+}
+
+hr {
+  width: auto;
+  color: black;
+}
+
+a, a:hover, a:active, a:visited {
+  font-size: 17px;
+  font-weight: 500;
+  color: black;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 16px;
+  text-decoration: none;
+  margin-left: 18px;
 }

@@ -5,7 +5,7 @@ body {
   padding: 0;
   /* background-color: #f2f2f2; */
   font-family: 'Roboto', sans-serif;
-  overflow-x: hidden
+  overflow-x: hidden;
 
 }
 
@@ -149,6 +149,7 @@ img {
 h1 {
   font-size: 28px;
   padding-left: 30px;
+  font-weight: 400;
 }
 
 p{
@@ -174,8 +175,9 @@ p{
 }
 
 .quote {
-  font-size: 19px;
+  font-size: 21px;
   font-style: italic;
+  font-weight: 300;
   padding-left: 30px;
 }
 
@@ -203,7 +205,6 @@ hr {
 
 a, a:hover, a:active, a:visited {
   font-size: 16px;
-  font-weight: 500;
   color: black;
   padding-top: 6px;
   padding-bottom: 6px;
@@ -212,4 +213,9 @@ a, a:hover, a:active, a:visited {
   border-radius: 16px;
   text-decoration: none;
   margin-left: 18px;
+}
+
+ol, ul  {
+  margin:22px;
+  padding:0;
 }

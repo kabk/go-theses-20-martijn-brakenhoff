@@ -78,6 +78,8 @@ body {
 #popup5{
   bottom: -750px;
   height: auto;
+  max-height: 80%;
+    overflow-y: hidden;
   background-color: #c8e4cd;
 }
 
@@ -86,9 +88,10 @@ body {
 }
 
 #popup6{
-  bottom: -550px;
-  max-height: 500px;
+  bottom: -750px;
+  max-height: 80%;
   height: auto;
+  overflow-y: hidden;
   color: white;
   /* background-image: url("images/chain.jpg");
   background-size: 100%; */
@@ -97,6 +100,43 @@ body {
 #popup6.show{
   bottom: 50px;
 }
+
+#popup7{
+  bottom: -750px;
+  height: auto;
+  max-height: 80%;
+  overflow-y: hidden;
+  background-color: #c8e4cd;
+}
+
+#popup7.show{
+  bottom: 50px;
+}
+
+#popup8{
+  bottom: -750px;
+  height: auto;
+  max-height: 80%;
+  overflow-y: hidden;
+  background-color: #c8e4cd;
+}
+
+#popup8.show{
+  bottom: 50px;
+}
+
+#popup9{
+  bottom: -550px;
+  max-height: 500px;
+  height: auto;
+  background-color: #f8f8d0;
+}
+
+#popup9.show{
+  bottom: 50px;
+}
+
+
 
 #wrap {
   height: 100%;

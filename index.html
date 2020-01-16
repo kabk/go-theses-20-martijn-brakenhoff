@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 
 <head>
-<title> Insights into Outdoor experience </title>
+<title> &#127794; Insights into Outdoor experience </title>
 <!--
 #@¶!?™ -->
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
@@ -39,6 +39,7 @@ console.log();
 
 </script>
 
+<!-- pop ups -->
 <div id="popup1" class="popupstyle">
   <p class="diary">
   13-05-2019, day 7
@@ -48,10 +49,7 @@ console.log();
   <br>
   <br>
   …The sound came from something that was standing right next to my tent. Still dizzy and disorientated from waking up from a deep sleep I tried to identify the source of the sound. The impact of its feet gave away that it was some kind of big animal. Curious yet terrified I was contemplating if I should take a peak or that it was maybe saver to stay put. Without success I tried to look through the small ventilation holes of my tent to see if I could see something moving. It was pitch black outside. I decided to stay put and wait for It to leave. After waiting for what seemed like an hour the animal finally decided to move along…
-  <br>
-  <br>
-  …The next morning I heard the same sound again. This time coming from a little further away. It was light this time and this time I decided to inspect. It turned out it was a small deer, not much bigger than a large size dog. Feeling a bit fooled I continued my journey…
-  </p>
+</p>
 </div>
 
 <div id="popup2" class="popupstyle">
@@ -96,18 +94,37 @@ console.log();
 
 <div id="popup6" class="popupstyle">
   <img src="images/chain.jpg" alt="klajsdl;fkjasd" class="popimage">
-
 </div>
-<div id="top">
-  <p class="gototop">  <a href="#content" style="color:#505e24;">go to top ^</a><br></p>
 
+<div id="popup7" class="popupstyle">
+  <img src="images/pic1.jpg" alt="klajsdl;fkjasd" class="popimage">
 </div>
+
+<div id="popup8" class="popupstyle">
+  <img src="images/pic4.jpg" alt="klajsdl;fkjasd" class="popimage">
+</div>
+
+<div id="popup9" class="popupstyle">
+  <p class="diary">
+  14-05-2019, day 8
+  <br>
+  <br>
+  …The next morning I heard the same sound again. This time coming from a little further away. It was light this time and this time I decided to inspect. It turned out it was a small deer, not much bigger than a large size dog. Feeling a bit fooled I continued my journey…
+  </p>
+</div>
+
+
+<!-- naar top van de pagina -->
+  <div id="top">
+    <p class="gototop">  <a href="#content" style="color:#505e24;">go to top ^</a><br></p>
+  </div>
+
+
 <div id="wrap">
 
-
-
 </div>
 
+<!-- hier begint de content -->
 <div id="content">
 <!-- titel -->
   <h1 id="begin">Insights into Outdoor Experiences</h1>
@@ -164,7 +181,7 @@ console.log();
 
 <!-- Hoofdstuk1 -->
 
-  <h1 id="hd1">Natural healthcare</h1>
+  <h1 id="hd1">Ions and vitamin D</h1>
   <p class="text">  After doing a quick search on Google I found multiple researches that were conducted by multiple institutions that proved that nature is in fact healthy. All these studies concluded indeed that being exposed to nature in one way or the other is healthy for a human being.
   </p>
   <p class="text">
@@ -517,28 +534,34 @@ console.log('schermHoogte = ', schermHoogte);
 
 // hoogte van het complete document
 var offsetHeight = document.getElementById('content').offsetHeight;
-var popUp = offsetHeight/6;
+var popUp = offsetHeight/9;
 var popUpDis = 300;
 
 // print regel document hoogte
 console.log('height of ducument = ', offsetHeight);
-console.log('height of ducument devided by 5 = ', offsetHeight/6);
+console.log('height of ducument devided by 9 = ', offsetHeight/9);
 console.log('popup punt = ', popUp);
-console.log('height of ducument devided by 5 * 2 = ', documentHoogte/5*2);
+console.log('height of ducument devided by 9 * 2 = ', documentHoogte/9*2);
 
 
 $(window).scroll(function() {
   if ($(window).scrollTop() > popUp && $(window).scrollTop() < popUp+popUpDis) {
       $('#popup1').addClass('show')
   } else if ($(window).scrollTop() > popUp*2 && $(window).scrollTop() < popUp*2+popUpDis) {
-      $('#popup5').addClass('show')
+      $('#popup9').addClass('show')
   } else if ($(window).scrollTop() > popUp*3 && $(window).scrollTop() < popUp*3+popUpDis) {
-      $('#popup2').addClass('show')
+      $('#popup5').addClass('show')
   } else if ($(window).scrollTop() > popUp*4 && $(window).scrollTop() < popUp*4+popUpDis) {
-      $('#popup3').addClass('show')
+      $('#popup2').addClass('show')
   } else if ($(window).scrollTop() > popUp*5 && $(window).scrollTop() < popUp*5+popUpDis) {
-      $('#popup4').addClass('show')
+      $('#popup8').addClass('show')
   } else if ($(window).scrollTop() > popUp*6 && $(window).scrollTop() < popUp*6+popUpDis) {
+      $('#popup3').addClass('show')
+  } else if ($(window).scrollTop() > popUp*7 && $(window).scrollTop() < popUp*7+popUpDis) {
+      $('#popup7').addClass('show')
+  } else if ($(window).scrollTop() > popUp*8 && $(window).scrollTop() < popUp*8+popUpDis) {
+      $('#popup4').addClass('show')
+  } else if ($(window).scrollTop() > popUp*9 && $(window).scrollTop() < popUp*9+popUpDis) {
       $('#popup6').addClass('show')
   }
 
@@ -549,6 +572,9 @@ $(window).scroll(function() {
   $('#popup4').removeClass('show')
   $('#popup5').removeClass('show')
   $('#popup6').removeClass('show')
+  $('#popup7').removeClass('show')
+  $('#popup8').removeClass('show')
+  $('#popup9').removeClass('show')
   }
 });
 

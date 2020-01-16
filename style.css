@@ -31,6 +31,16 @@ body {
 
 }
 
+.popupImageDescription  {
+  width: 100%;
+  height: auto;
+  bottom: 0;
+  position: absolute;
+  z-index: 101;
+  /* text-align: center; */
+  color:white;
+}
+
 #popup1{
   bottom: -550px;
   max-height: 500px;
@@ -78,7 +88,7 @@ body {
 #popup5{
   bottom: -750px;
   height: auto;
-  max-height: 700px;
+  max-height: 520px;
   overflow-y: hidden;
   background-color: black;
 }
@@ -127,7 +137,8 @@ body {
 
 #popup9{
   bottom: -550px;
-  max-height: 500px;
+  max-height: 520px;
+  overflow-y: hidden;
   height: auto;
   background-color: #f8f8d0;
 }
@@ -135,8 +146,6 @@ body {
 #popup9.show{
   bottom: 50px;
 }
-
-
 
 #wrap {
   height: 100%;

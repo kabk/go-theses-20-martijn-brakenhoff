@@ -52,7 +52,7 @@ console.log();
 <!-- pop ups -->
     <div id="popup1" class="popupstyle">
       <p class="diary">
-      13-05-2019, day 7
+      13-05-2019, day 7, Sweden.
       <br>
       <br>
       …It was my second day in Sweden today. I found a beautiful place in the woods to sleep. I slept like a baby until I woke up in the middle of the night because of a loud and terrifying scream…
@@ -62,9 +62,49 @@ console.log();
     </p>
     </div>
 
+    <div id="popup5" class="popupstyle">
+      <div class="popupImageDescription">
+        <p class="diary">
+          14-05-2019 (06:35), day 8, Sweden. <br>
+          <br>
+          <br>
+          …The next morning I heard the same sound again. This time coming from a little further away. It was light this time and this time I decided to inspect. It turned out it was a small deer, not much bigger than a large size dog. Feeling a bit fooled I continued my journey…
+        </p>
+      </div>
+      <video width="100%" height="auto" controls>
+        <source src="images/vid.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <div id="popup7" class="popupstyle">
+      <div class="popupImageDescription">
+        <p class="diary">
+          14-05-2019 (17:35), day 8, Sweden.
+          <!-- <br>
+          Broby,  -->
+        </p>
+      </div>
+      <img src="images/pic1.jpg" alt="klajsdl;fkjasd" class="popimage">
+    </div>
+
+    <div id="popup9" class="popupstyle">
+
+      <div class="popupImageDescription">
+        <p class="diary">
+          18-05-2019 (15:45), day 12, Sweden.
+        </p>
+      </div>
+      <video width="100%" height="auto" controls>
+        <source src="images/vid2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+    </div>
+
     <div id="popup2" class="popupstyle">
       <p class="diary">
-      24-05-2019, day 18
+      24-05-2019, day 18, Sweden.
       <br>
       <br>
       …So far I have been very lucky with public restrooms. In scandinavia there are many of them. This time however, there were no restrooms to be seen in miles, basically leaving the wild as my only remaining option to relieve myself. Unfortunately I found myself in the middle of farm land with barely any vegetation at all…
@@ -74,9 +114,21 @@ console.log();
       </p>
     </div>
 
+    <div id="popup6" class="popupstyle">
+      <div class="popupImageDescription">
+        <p class="diary">
+          29-05-2019, day 23 (10:52) Sweden.
+          <!-- <br>
+          <!-- Kvarnabo,  --> 
+
+        </p>
+      </div>
+      <img src="images/pic2.jpg" alt="klajsdl;fkjasd" class="popimage">
+    </div>
+
     <div id="popup3" class="popupstyle">
       <p class="diary">
-      31-05-2019, day 25
+      31-05-2019, day 25, Denmark.
       <br>
       <br>
       …In Denmark it is not allowed to camp anywhere you want like in Sweden. Fortunately as an alternative to wild camping they have designated campsites scattered all over the country where you can camp for free. I found one of these free spots near the city of Aalborg where I could stay for the night. The place however was not what it seemed…
@@ -86,45 +138,25 @@ console.log();
       </p>
     </div>
 
+    <div id="popup8" class="popupstyle">
+      <div class="popupImageDescription">
+        <p class="diary">
+          06-06-2019 (07:33), day 31, Denmark.
+          <!-- <br>
+          Kruså, -->
+        </p>
+      </div>
+      <img src="images/pic4.jpg" alt="klajsdl;fkjasd" class="popimage">
+    </div>
+
     <div id="popup4" class="popupstyle">
       <p class="diary">
-      09-06-2019, day 34
+      09-06-2019, day 34, Germany.
       <br>
       <br>
       ...I am in Germany, and very close to home. I ate all my food the evening before, so my first goal of the day was to do groceries. It turned out that all supermarkets were closed. I forgot that it is pinksteren today and I can’t get food anywhere. The only shops that are open seem to be gas stations where they only sell candy and sodas. Despite this setback I managed to cover my longest distances so far. 180 km on a diet almost exclusively containing doritos and snickers...
       </p>
     </div>
-
-    <div id="popup5" class="popupstyle">
-      <video width="100%" height="auto" controls>
-        <source src="images/vid.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-    </div>
-
-    <div id="popup6" class="popupstyle">
-      <img src="images/pic2.jpg" alt="klajsdl;fkjasd" class="popimage">
-    </div>
-
-    <div id="popup7" class="popupstyle">
-      <img src="images/pic1.jpg" alt="klajsdl;fkjasd" class="popimage">
-    </div>
-
-    <div id="popup8" class="popupstyle">
-      <img src="images/pic4.jpg" alt="klajsdl;fkjasd" class="popimage">
-    </div>
-
-    <div id="popup9" class="popupstyle">
-      <p class="diary">
-      14-05-2019, day 8
-      <br>
-      <br>
-      …The next morning I heard the same sound again. This time coming from a little further away. It was light this time and this time I decided to inspect. It turned out it was a small deer, not much bigger than a large size dog. Feeling a bit fooled I continued my journey…
-      </p>
-    </div>
-
-
-
 
 
 <div id="wrap">
@@ -636,21 +668,21 @@ $(window).scroll(function() {
   if ($(window).scrollTop() > popUp && $(window).scrollTop() < popUp+popUpDis) {
       $('#popup1').addClass('show')
   } else if ($(window).scrollTop() > popUp*2 && $(window).scrollTop() < popUp*2+popUpDis) {
-      $('#popup9').addClass('show')
-  } else if ($(window).scrollTop() > popUp*3 && $(window).scrollTop() < popUp*3+popUpDis) {
       $('#popup5').addClass('show')
-  } else if ($(window).scrollTop() > popUp*4 && $(window).scrollTop() < popUp*4+popUpDis) {
-      $('#popup2').addClass('show')
-  } else if ($(window).scrollTop() > popUp*5 && $(window).scrollTop() < popUp*5+popUpDis) {
-      $('#popup8').addClass('show')
-  } else if ($(window).scrollTop() > popUp*6 && $(window).scrollTop() < popUp*6+popUpDis) {
-      $('#popup3').addClass('show')
-  } else if ($(window).scrollTop() > popUp*7 && $(window).scrollTop() < popUp*7+popUpDis) {
+  } else if ($(window).scrollTop() > popUp*3 && $(window).scrollTop() < popUp*3+popUpDis) {
       $('#popup7').addClass('show')
-  } else if ($(window).scrollTop() > popUp*8 && $(window).scrollTop() < popUp*8+popUpDis) {
-      $('#popup4').addClass('show')
-  } else if ($(window).scrollTop() > popUp*9 && $(window).scrollTop() < popUp*9+popUpDis) {
+  } else if ($(window).scrollTop() > popUp*4 && $(window).scrollTop() < popUp*4+popUpDis) {
+      $('#popup9').addClass('show')
+  } else if ($(window).scrollTop() > popUp*5 && $(window).scrollTop() < popUp*5+popUpDis) {
+      $('#popup2').addClass('show')
+  } else if ($(window).scrollTop() > popUp*6 && $(window).scrollTop() < popUp*6+popUpDis) {
       $('#popup6').addClass('show')
+  } else if ($(window).scrollTop() > popUp*7 && $(window).scrollTop() < popUp*7+popUpDis) {
+      $('#popup3').addClass('show')
+  } else if ($(window).scrollTop() > popUp*8 && $(window).scrollTop() < popUp*8+popUpDis) {
+      $('#popup8').addClass('show')
+  } else if ($(window).scrollTop() > popUp*9 && $(window).scrollTop() < popUp*9+popUpDis) {
+      $('#popup4').addClass('show')
   }
 
   else {

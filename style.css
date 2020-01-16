@@ -39,6 +39,7 @@ body {
   z-index: 101;
   /* text-align: center; */
   color:white;
+  pointer-events: none;
 }
 
 #popup1{

@@ -149,6 +149,7 @@ body {
 #content {
   height: 100%;
   width: auto;
+  max-width: 400px;
   margin: 18px;
   padding-bottom: 60px ;
   overflow-x: hidden
@@ -266,6 +267,8 @@ a.two{
 }
 
 ol, ul  {
-  margin:22px;
-  padding:0;
+  list-style-type: circle;
+  /* margin-left: 22px; */
+  /* padding:0; */
+  /* margin-bottom: 5px; */
 }

@@ -6,7 +6,7 @@
 <!--
 #@¶!?™ -->
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1">
+
 
 <!-- Font -->
 <link href="https://fonts.googleapis.com/css?family=Roboto:300i,400,400i,500&display=swap" rel="stylesheet">
@@ -71,7 +71,7 @@ console.log();
           …The next morning I heard the same sound again. This time coming from a little further away. It was light this time and this time I decided to inspect. It turned out it was a small deer, not much bigger than a large size dog. Feeling a bit fooled I continued my journey…
         </p>
       </div>
-      <video width="100%" height="auto" controls>
+      <video class="myVideo" width="100%" height="auto" controls>
         <source src="images/vid.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
@@ -95,7 +95,7 @@ console.log();
           18-05-2019 (15:45), day 12, Sweden.
         </p>
       </div>
-      <video width="100%" height="auto" controls>
+      <video class="myVideo" width="100%" height="auto" controls>
         <source src="images/vid2.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
@@ -119,7 +119,7 @@ console.log();
         <p class="diary">
           29-05-2019, day 23 (10:52) Sweden.
           <!-- <br>
-          <!-- Kvarnabo,  --> 
+          <!-- Kvarnabo,  -->
 
         </p>
       </div>
@@ -655,7 +655,7 @@ console.log('schermHoogte = ', schermHoogte);
 // hoogte van het complete document
 var offsetHeight = document.getElementById('content').offsetHeight;
 var popUp = offsetHeight/9;
-var popUpDis = 300;
+var popUpDis = 500;
 
 // print regel document hoogte
 console.log('height of ducument = ', offsetHeight);
@@ -663,6 +663,14 @@ console.log('height of ducument devided by 9 = ', offsetHeight/9);
 console.log('popup punt = ', popUp);
 console.log('height of ducument devided by 9 * 2 = ', documentHoogte/9*2);
 
+// print regel document hoogte
+
+
+var vid = document.getElementById("#myVideo");
+
+function pauseVid() {
+  vid.pause();
+}
 
 $(window).scroll(function() {
   if ($(window).scrollTop() > popUp && $(window).scrollTop() < popUp+popUpDis) {
@@ -695,8 +703,11 @@ $(window).scroll(function() {
   $('#popup7').removeClass('show')
   $('#popup8').removeClass('show')
   $('#popup9').removeClass('show')
+  pauseVid();
   }
 });
+
+
 
 </script>
 
